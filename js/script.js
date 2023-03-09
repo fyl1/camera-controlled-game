@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Скорость платформы
   var paddleSpeed = 6;
   // Скорость мяча
-  var ballSpeed = 10;
+  var ballSpeed = 5;
   // Рекорд
   var record = 0;
   // Набранные очки
@@ -62,10 +62,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const rightPaddle = {
     // Ставим по центру с правой стороны
     x: canvas.width - grid * 3,
+   
+
     y: canvas.height / 2 - paddleHeight / 2,
     // Задаём такую же ширину и высоту
     width: grid,
-    height: paddleHeight,
+    height: paddleHeight * 2,
     // Правая платформа тоже пока никуда не двигается
     dy: 0,
   };
@@ -121,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       rightPaddle.y = RightmaxPaddleY;
     }
     // Рисуем платформы белым цветом
-    context.fillStyle = "white";
+    context.fillStyle = "#ffffff";
     // Каждая платформа — прямоугольник
     context.fillRect(
       leftPaddle.x,
