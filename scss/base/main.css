@@ -1110,6 +1110,16 @@ img.thumbnail {
     font-size: 5.7vw;
   }
 }
+#game_start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
 #game_start_container {
   color: white;
   font-size: 2em;
@@ -1117,7 +1127,6 @@ img.thumbnail {
   text-align: center;
   background: green;
   width: 400px;
-  padding: 1em;
   margin: 5em auto;
 }
 
