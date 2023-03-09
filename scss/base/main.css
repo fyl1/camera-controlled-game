@@ -1109,4 +1109,29 @@ img.thumbnail {
   .contacts-box a {
     font-size: 5.7vw;
   }
+}
+#game_start_container {
+  color: white;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  background: green;
+  width: 400px;
+  padding: 1em;
+  margin: 5em auto;
+}
+
+#game_container__inner {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#loading {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  display: none;
 }/*# sourceMappingURL=main.css.map */
