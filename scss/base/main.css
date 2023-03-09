@@ -1134,4 +1134,25 @@ img.thumbnail {
   text-align: center;
   margin-bottom: 1em;
   display: none;
+}
+
+.hands-run {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  animation: run 1s infinite;
+}
+
+@keyframes run {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }/*# sourceMappingURL=main.css.map */
