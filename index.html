@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>grisha paramonov</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="image/favicon_w.png" type="image/png" />
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="./js/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="./js/control_utils.js" crossorigin="anonymous"></script>
+    <script src="./js/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="./js/hands.js" crossorigin="anonymous"></script>
+    <script src="./js/adapter.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="./js/hands_solution_packed_assets_loader.js" crossorigin="anonymous"></script> -->
+    <script src="./js/hands_solution_simd_wasm_bin.js" crossorigin="anonymous"></script>
+ 
+  </head>
+  <body>
+    <div class="container" style="display: none">
+      <video
+        class="input_video"
+        id="camera_video"
+        autoplay=""
+        playsinline=""
+      ></video>
+      <canvas class="output_canvas" width="900px" height="640px"></canvas>
+    </div>
+
+    <div
+      id="loading"
+      style="
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+        display: none;
+      "
+    >
+      Загружаю, подождите...
+    </div>
+    <div style="display: none" id="game_container">
+      <div
+        style="
+          color: white;
+          font-size: 2em;
+          text-align: center;
+          margin-bottom: 1em;
+        "
+      >
+        Поднимайте правую руку
+      </div>
+
+      <!-- Рисуем игровое поле -->
+      <div id="canvas-container">
+        <canvas
+          width="900"
+          height="640"
+          style="text-align: cemter"
+          id="game"
+        ></canvas>
+      </div>
+    </div>
+
+    <div id="game_start_container" style="display: block">
+      <a
+        style="
+          color: white;
+          font-size: 2em;
+          display: block;
+          text-align: center;
+          background: green;
+          width: 400px;
+          padding: 1em;
+          margin: 5em auto;
+        "
+        id="game_start"
+        >Запустить игру</a
+      >
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands_solution_packed_assets_loader.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands_solution_packed_assets.data"></script>
+    <script src="/js/script.js"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
